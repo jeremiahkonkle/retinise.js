@@ -13,18 +13,18 @@ Retinise.js is a really simple jQuery plugin which 'retinises' your inline image
 ```html
 <img data-src=”/img/path/non-retina.jpg” data-alt="My Image" class=”retina” />
 <noscript>
-  <img src=”/img/path/non-retina.jpg” alt="My Image” />
+  <img src=”/img/path/non-retina.jpg” alt="My Image" />
 </noscript>
 ```
 
 ## JS
 ```js
-$(’.retina’).retinise();
+$('.retina').retinise();
 ```
 
 ## Options
 ```js
-suffix: “@2x”
+suffix: "@2x"
 srcattr: "data-src"
 altattr: "data-alt"
 ```
