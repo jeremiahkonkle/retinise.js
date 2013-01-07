@@ -1,6 +1,7 @@
 # retinise.js
 
 Retinise.js is a really simple jQuery plugin which 'retinises' your inline images, and because it uses 'data-src' instead of 'src' it means it only ever serves up the image you need, saving you and your users bandwidth. It's really small and really easy, just follow the steps below.
+Please post your feedback to let me know what you think!
 
 
 ## Head
