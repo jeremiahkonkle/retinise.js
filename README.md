@@ -31,9 +31,9 @@ altattr: "data-alt"
 
 ## License
 
-Copyright (c) 2012+ Simon Sturgess
+Copyright 2012+ Simon Sturgess.
 
 ## Support
 
-[Website](http://www.dahliacreative.com/retinisejs/)
+[Website](http://www.dahliacreative.com/retinisejs/) | 
 [Twitter](http://www.twitter.com/dahliacreative)
