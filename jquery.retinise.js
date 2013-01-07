@@ -1,13 +1,13 @@
 /*  RETINISE.JS --------------------------------------------------*
 	
-	Author:			Simon Sturgess
-				@dahliacreative
-				simon@dahliacreative.com
-				http://www.dahliacreative.com
+	Author:		Simon Sturgess
+			@dahliacreative
+			simon@dahliacreative.com
+			http://www.dahliacreative.com
 					
-	Thanks to:		Pedro Piedade
-				@iampedropiedade
-				http://pedropiedade.com/
+	Thanks to:	Pedro Piedade
+			@iampedropiedade
+			http://pedropiedade.com/
 					
 	Documentation:	http://www.dahliacreative.com/retinisejs
 	
