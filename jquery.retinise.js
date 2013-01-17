@@ -47,7 +47,7 @@
 						$t.attr({'height':$h , 'width':$w});
 					});
 				} else {
-					$t.attr({'src': $s, 'alt':options.altattr});
+					$t.attr({'src': $s, 'alt':$a});
 				}
 			}
 		});
