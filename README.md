@@ -18,13 +18,6 @@ Please post your feedback to let me know what you think! I'd love to know if you
 </noscript>
 ```
 
-## CSS
-```css
-.retinise {
-  display: none;
-}
-```
-
 ## JS
 ```js
 $('.retina').retinise();
