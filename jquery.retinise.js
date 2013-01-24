@@ -36,6 +36,7 @@
 	
 		$(this).each(function() {
 			var $t = $(this);
+			$t.css('display', 'none');
 			if($t.attr(options.srcattr)!==null) {
 				var $s = $t.attr(options.srcattr);
 				var $a = $t.attr(options.altattr);
