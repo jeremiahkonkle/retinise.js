@@ -12,7 +12,7 @@ Please post your feedback to let me know what you think!
 
 ## HTML
 ```html
-<img data-src=”/img/path/non-retina.jpg” data-alt="My Image" class=”retina” />
+<img src="" alt="" data-src=”/img/path/non-retina.jpg” data-alt="My Image" class=”retina” />
 <noscript>
   <img src=”/img/path/non-retina.jpg” alt="My Image" />
 </noscript>
