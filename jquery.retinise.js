@@ -44,10 +44,10 @@
 					$t.load(function () {
 						var $h = $t.height()/$p;
 						var $w = $t.width()/$p;
-						$t.attr({'height':$h , 'width':$w});
+						$t.attr({'height':$h , 'width':$w}).css('display', 'block');
 					});
 				} else {
-					$t.attr({'src': $s, 'alt':$a});
+					$t.attr({'src': $s, 'alt':$a}).css('display', 'block');
 				}
 			}
 		});
