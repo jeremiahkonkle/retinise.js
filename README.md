@@ -33,7 +33,7 @@ altattr: "data-alt"
 ## PHP Users
 
 If you are using retinise with PHP, I suggest you use @letsallplaygolf's awesome PHP helper to save you writing out lots of markup:
-[PHP Helper](https://github.com/letsallplaygolf/retinise.js---Simple-PHP-Helper)
+[PHP Helper by @letsallplaygolf](https://github.com/letsallplaygolf/retinise.js---Simple-PHP-Helper)
 
 ## License
 
