@@ -9,7 +9,7 @@
 			@iampedropiedade
 			http://pedropiedade.com/
 					
-	Documentation:	http://www.dahliacreative.com/retinisejs
+	Documentation:	https://github.com/dahliacreative/retinise.js
 	
 	Release date:	27/09/2012
 	Version:	v.1.0
