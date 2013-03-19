@@ -1,25 +1,5 @@
 /*  RETINISE.JS --------------------------------------------------*
-<<<<<<< HEAD
-	
-	Author:		Simon Sturgess
-			@dahliacreative
-			simon@dahliacreative.com
-			http://www.dahliacreative.com
-					
-	Thanks to:	Pedro Piedade
-			@iampedropiedade
-			http://pedropiedade.com/
-					
-	Documentation:	https://github.com/dahliacreative/retinise.js
-	
-	Release date:	27/09/2012
-	Version:	v.1.0
-	Licensing:	© Copyright 2012 DahliaCreative.
-			Free to use under the GPLv2 license.
-			http://www.gnu.org/licenses/gpl-2.0.html
-					
-=======
-  
+
   Author:         Simon Sturgess
                   @dahliacreative
                   simon@dahliacreative.com
@@ -36,8 +16,7 @@
   Licensing:      © Copyright 2012 DahliaCreative.
                   Free to use under the GPLv2 license.
                   http://www.gnu.org/licenses/gpl-2.0.html
-          
->>>>>>> Including options for devs using rails asset pipeline.
+                  
 *--------------------------------------------------------------------*/
 
 (function($){
