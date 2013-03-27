@@ -21,7 +21,7 @@ Please post your feedback to let me know what you think! I'd love to know if you
 Due to the asset pipeline changing the name of your images when they are served up to the client you need to include the path to your retina images including your prefix, by default the plugin uses ```html data-ret``` but you can change this in the options when you call the script.
 
 ####Example
-```html
+```
 data-ret=”/img/path/retina@2x.jpg”
 ```
 
