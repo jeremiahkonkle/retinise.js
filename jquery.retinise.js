@@ -22,44 +22,64 @@
 (function($){
   $.fn.extend({
 
-  retinise: function(options) {
+  retinise: function(params) {
 
     var defaults = {
-      suffix: "@2x",
-      srcattr: "data-src",
-      retattr: "data-ret",
-      altattr: "data-alt"
+      suffix:   "@2x",
+      srcattr:  "data-src",
+      retattr:  "data-ret",
+      altattr:  "data-alt"
     };
-    
-    var options =  $.extend(defaults, options);
-    var $p = window.devicePixelRatio;
-    var $r = ($p > 1) ? true : false;
-  
+
+    var options = $.extend(defaults, params),
+        pixelRatio = window.devicePixelRatio,
+        retina = (pixelRatio > 1) ? true : false;
+
     $(this).each(function() {
-      var $t = $(this);
-      var $displayAttr = $t.css('display');
-      $t.css('display', 'none');
-      if($t.attr(options.srcattr)!==null) {
-        var $s = $t.attr(options.srcattr),
-            $a = $t.attr(options.altattr),
-            $x = $t.attr(options.retattr);
-        if ($r === true) {
-          if($t.attr(options.retattr)!==null) {
-            $t.attr({'src': $x, 'alt':$a});
+      var retImg = $(this),
+          display = retImg.css('display');
+
+      retImg.css('display', 'none');
+
+      if(retImg.attr(options.srcattr)) {
+        var imgSrc = retImg.attr(options.srcattr),
+            imgAlt = retImg.attr(options.altattr),
+            imgRetSrc = retImg.attr(options.retattr);
+
+        if (retina === true) {
+          if(retImg.attr(options.retattr)) {
+            retImg.attr({
+              'src': imgRetSrc,
+              'alt': imgAlt
+            });
           } else {
-            $t.attr({'src': $s.replace(/\.\w+$/, function(match) { return options.suffix + match; }), 'alt':$a});
+            retImg.attr({
+              'src': imgSrc.replace(/\.\w+$/, function(match) { return options.suffix + match; }),
+              'alt':imgAlt
+            });
           }
-          $t.load(function () {
-            var $h = $t.height()/$p;
-            var $w = $t.width()/$p;
-            $t.attr({'height':$h , 'width':$w}).css('display', $displayAttr);
+          retImg.load(function () {
+            var imgHeight = retImg.height()/pixelRatio,
+                imgWidth = retImg.width()/pixelRatio;
+
+            retImg.attr({
+              'height': imgHeight,
+              'width': imgWidth
+            }).css({
+              'display': display
+            });
           });
         } else {
-          $t.attr({'src': $s, 'alt':$a}).css('display', $displayAttr);
+          retImg.attr({
+            'src': imgSrc,
+            'alt': imgAlt
+          }).css({
+            'display': display
+          });
         }
       }
     });
   }
 });
-     
+
 })(jQuery);
