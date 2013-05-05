@@ -37,6 +37,7 @@
   
     $(this).each(function() {
       var $t = $(this);
+      var $displayAttr = $t.css('display');
       $t.css('display', 'none');
       if($t.attr(options.srcattr)!==null) {
         var $s = $t.attr(options.srcattr),
@@ -51,10 +52,10 @@
           $t.load(function () {
             var $h = $t.height()/$p;
             var $w = $t.width()/$p;
-            $t.attr({'height':$h , 'width':$w}).css('display', 'block');
+            $t.attr({'height':$h , 'width':$w}).css('display', $displayAttr);
           });
         } else {
-          $t.attr({'src': $s, 'alt':$a}).css('display', 'block');
+          $t.attr({'src': $s, 'alt':$a}).css('display', $displayAttr);
         }
       }
     });
