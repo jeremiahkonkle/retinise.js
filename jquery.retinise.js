@@ -59,11 +59,17 @@
             });
           }
           retImg.load(function () {
-            var imgHeight = retImg.height()/pixelRatio,
-                imgWidth = retImg.width()/pixelRatio;
             
               // fixes a bug where I clone the image while it's loading
             retImg = $('['+options.srcattr+'="'+imgSrc+'"]');
+            
+            // fixes a bug where the image is initially display: none
+            var imgHeight = retImg.height() || retImg.get(0).naturalHeight || 0,
+                imgWidth = retImg.width() || retImg.get(0).naturalWidth || 0;
+                var after_load_display = retImg.css('display');
+            
+            imgHeight = imgHeight/pixelRatio;
+            imgWidth = imgWidth/pixelRatio;
 
             retImg.attr({
               'height': imgHeight,
