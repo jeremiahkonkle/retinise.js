@@ -61,6 +61,9 @@
           retImg.load(function () {
             var imgHeight = retImg.height()/pixelRatio,
                 imgWidth = retImg.width()/pixelRatio;
+            
+              // fixes a bug where I clone the image while it's loading
+            retImg = $('['+options.srcattr+'="'+imgSrc+'"]');
 
             retImg.attr({
               'height': imgHeight,
