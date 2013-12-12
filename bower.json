@@ -1,0 +1,13 @@
+{
+  "name": "sw-retinise",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jeremiahkonkle/retinise.js",
+  "authors": [
+    "Jeremiah Konkle <jeremiah@danjerous.com>"
+  ],
+  "main": "jquery.retinise.js",
+  "license": "MIT",
+  "ignore": [
+    "example"
+  ]
+}
